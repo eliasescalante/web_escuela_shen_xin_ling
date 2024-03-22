@@ -1,0 +1,17 @@
+
+/* cuerpo del index*/    
+.cuerpo{
+    background-color: "white";
+}
+
+.navbar-brand{
+    color: red;
+}
+
+.img-chica {
+    max-height: 90vh; /* Ajusta este valor según tus necesidades */
+}
+
+.pie{
+    background-color: black;
+}
