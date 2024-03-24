@@ -6,6 +6,20 @@ body, html {
     background-color: black;
 }
 
+/* Media query para dispositivos con un ancho máximo de 767px (generalmente dispositivos móviles) */
+@media only screen and (max-width: 767px) {
+    /* cuerpo html contenedor del body*/    
+    .cuerpo{
+        height: 100vh; /* Establecer altura al 100% del viewport height */
+    }
+
+    /*clase para imagenes dentro del carrousel*/
+    .img-chica {
+        max-height: 50vh; /* Ajusta este valor según tus necesidades */
+        max-width: 100%;
+    }
+}
+
 /* cuerpo html contenedor del body*/    
 .cuerpo{
     background-color: "black";
