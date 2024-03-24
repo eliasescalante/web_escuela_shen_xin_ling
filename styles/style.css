@@ -1,17 +1,42 @@
-
-/* cuerpo del index*/    
-.cuerpo{
-    background-color: "white";
+/*seteo de color y dimensiones de body y html general*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
 }
 
+/* cuerpo html contenedor del body*/    
+.cuerpo{
+    background-color: "black";
+    height: 100vh; /* Establecer altura al 100% del viewport height */
+}
+
+/*contenedor de las etiquetas del navbar*/
 .navbar-brand{
     color: red;
 }
-
+/*clase para imagenes dentro del carrousel*/
 .img-chica {
-    max-height: 90vh; /* Ajusta este valor según tus necesidades */
+    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
+    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
+    max-width: 100%;
+    object-fit: contain; /* Conservar proporciones de la imagen sin estirarla */
 }
-
+/*pie de pagina*/
 .pie{
     background-color: black;
+}
+/*contenedor del footer formato sobre la etiqueta p*/
+.piedepagina p{
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+/*formato sobre el footer y las redes sociales*/
+.piedepagina .redessociales{
+    text-align: center;
+    img {
+        height:  35px;
+    }
 }
