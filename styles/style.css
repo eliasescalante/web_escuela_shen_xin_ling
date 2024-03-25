@@ -28,7 +28,7 @@ body, html {
 
 /*contenedor de las etiquetas del navbar*/
 .navbar-brand{
-    color: red;
+    color: white;
 }
 /*clase para imagenes dentro del carrousel*/
 .img-chica {
@@ -50,7 +50,9 @@ body, html {
 /*formato sobre el footer y las redes sociales*/
 .piedepagina .redessociales{
     text-align: center;
-    img {
-        height:  35px;
-    }
+}
+
+.piedepagina .redessociales img{
+    max-width: 3vh;    
+    margin: 0 20px;
 }
