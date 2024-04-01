@@ -46,6 +46,11 @@ body, html {
 .navbar-brand{
     color: white;
 }
+
+.navbar-nav a.nav-link:hover {
+    color: green !important; /* Cambia el color del texto a azul */
+}
+
 /*clase para imagenes dentro del carrousel*/
 .img-chica {
     max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
