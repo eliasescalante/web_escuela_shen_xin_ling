@@ -1,16 +1,21 @@
 /*seteo de color y dimensiones de body y html general*/
+/*
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: black;
 }
+*/
 
+.cuerpo{
+    background-color: black;
+}
 .pages {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 .pages main{
@@ -58,22 +63,58 @@ body, html {
     max-width: 100%;
     object-fit: contain; /* Conservar proporciones de la imagen sin estirarla */
 }
+
 /*pie de pagina*/
-.pie{
+.pie {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: black;
+    padding: 20px; /* Ajusta este valor según tus necesidades */
 }
+
 /*contenedor del footer formato sobre la etiqueta p*/
 .piedepagina p{
     color: white;
     text-align: center;
     padding: 0px;
 }
+
 /*formato sobre el footer y las redes sociales*/
 .piedepagina .redessociales{
     text-align: center;
 }
 
 .piedepagina .redessociales img{
-    max-width: 3vh;    
-    margin: 0 20px;
+    max-width: 30px;    
+    margin: 0 10px;
 }
+
+/* estilo para pagina nosotros */
+.contenido p{
+    text-align: center;
+    padding: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente las tarjetas */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    width: 18rem;
+}
+
+/* Estilo para la tarjeta */
+.card {
+    width: 18rem;
+    transition: opacity 0.3s ease; /* Transición suave para el cambio de opacidad */
+}
+
+/* Efecto de opacidad al pasar el mouse sobre la tarjeta */
+.card:hover {
+    opacity: 0.5; /* Cambia la opacidad al 50% al pasar el mouse */
+}
+
+
