@@ -15,7 +15,7 @@ body, html {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 200vh;
+    min-height: 230vh;
 }
 
 .pages main{
@@ -122,4 +122,9 @@ body, html {
     opacity: 0.5; /* Cambia la opacidad al 50% al pasar el mouse */
 }
 
+.contenedor-imagen-nosotros{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
 
