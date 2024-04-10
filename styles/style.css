@@ -1,26 +1,19 @@
-/*seteo de color y dimensiones de body y html general*/
-/*
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+/* Seteo de color y dimensiones de body y html general */
+.cuerpo {
     background-color: black;
 }
-*/
 
-.cuerpo{
-    background-color: black;
-}
 .pages {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 230vh;
+    min-height: 100vh; /* Modificado para ocupar el 100% de la altura de la ventana */
 }
 
-.pages main{
+.pages main {
     flex: 1;
     text-align: center;
+    padding: 0 1rem; /* Añadido padding para dispositivos móviles */
 }
 
 .pages pie {
@@ -29,91 +22,67 @@ body, html {
 
 /* Media query para dispositivos con un ancho máximo de 767px (generalmente dispositivos móviles) */
 @media only screen and (max-width: 767px) {
-    /* cuerpo html contenedor del body*/    
-    .cuerpo{
+    /* cuerpo html contenedor del body*/
+    .cuerpo {
         height: 100vh; /* Establecer altura al 100% del viewport height */
     }
 
-    /*clase para imagenes dentro del carrousel*/
+    /* clase para imagenes dentro del carrousel */
     .img-chica {
         max-height: 50vh; /* Ajusta este valor según tus necesidades */
         max-width: 100%;
     }
 }
 
-/* cuerpo html contenedor del body*/    
-.cuerpo{
-    background-color: "black";
-    height: 100vh; /* Establecer altura al 100% del viewport height */
-}
-
-/*contenedor de las etiquetas del navbar*/
-.navbar-brand{
-    color: white;
-}
-
-.navbar-nav a.nav-link:hover {
-    color: green !important; /* Cambia el color del texto a azul */
-}
-
-/*clase para imagenes dentro del carrousel*/
-.img-chica {
-    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
-    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
-    max-width: 100%;
-    object-fit: contain; /* Conservar proporciones de la imagen sin estirarla */
-}
-
-/*pie de pagina*/
-.pie {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    padding: 20px; /* Ajusta este valor según tus necesidades */
-}
-
-/*contenedor del footer formato sobre la etiqueta p*/
-.piedepagina p{
+/* contenedor del footer formato sobre la etiqueta p */
+.piedepagina p {
     color: white;
     text-align: center;
     padding: 0px;
 }
 
-/*formato sobre el footer y las redes sociales*/
-.piedepagina .redessociales{
+/* Formato sobre el footer y las redes sociales */
+.piedepagina .redessociales {
     text-align: center;
 }
 
-.piedepagina .redessociales img{
-    max-width: 30px;    
+.piedepagina .redessociales img {
+    max-width: 30px;
     margin: 0 10px;
 }
 
-/* estilo para pagina nosotros */
-.contenido p{
+/* Estilo para la imagen del banner */
+.imagen-banner img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+/* Estilo para página nosotros */
+.contenido p {
     text-align: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 1rem; /* Modificado para dispositivos móviles */
+    padding-right: 1rem; /* Modificado para dispositivos móviles */
 }
 
 .card-container {
     display: flex;
-    justify-content: center; /* Para centrar horizontalmente las tarjetas */
-    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en dispositivos móviles */
 }
 
 .card {
     width: 18rem;
+    flex: 1 0 auto; /* Ajusta el tamaño de las tarjetas en dispositivos móviles */
+    margin-bottom: 20px; /* Añadido margen inferior para dispositivos móviles */
 }
 
 .lista-sin-puntos {
-    list-style-type: none; /* Oculta los puntos de la lista */
+    list-style-type: none;
 }
 
 /* Estilo para la tarjeta */
 .card {
-    width: 18rem;
     transition: opacity 0.3s ease; /* Transición suave para el cambio de opacidad */
 }
 
@@ -122,7 +91,7 @@ body, html {
     opacity: 0.5; /* Cambia la opacidad al 50% al pasar el mouse */
 }
 
-.contenedor-imagen-nosotros{
+.contenedor-imagen-nosotros {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
