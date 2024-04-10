@@ -1,5 +1,7 @@
 /* Seteo de color y dimensiones de body y html general */
 
+
+/******************************************INDEX********************************/
 .cuerpo {
     background-color: black;
 }
@@ -71,6 +73,7 @@
     margin: 0 10px;
 }
 
+/******************************************NOSOTROS***************************************/
 /* Estilo para la imagen del banner */
 .imagen-banner img {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
@@ -80,8 +83,8 @@
 /* Estilo para página nosotros */
 .contenido p {
     text-align: center;
-    padding-left: 1rem; /* Modificado para dispositivos móviles */
-    padding-right: 1rem; /* Modificado para dispositivos móviles */
+    padding-left: 2rem; /* Modificado para dispositivos móviles */
+    padding-right: 2rem; /* Modificado para dispositivos móviles */
 }
 
 .card-container {
@@ -93,7 +96,7 @@
 
 .card {
     width: 18rem;
-    flex: 1 0 auto; /* Ajusta el tamaño de las tarjetas en dispositivos móviles */
+    flex: 0 0 auto; /* Ajusta el tamaño de las tarjetas en dispositivos móviles */
     margin-bottom: 20px; /* Añadido margen inferior para dispositivos móviles */
 }
 
@@ -122,3 +125,5 @@
     max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
     height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
 }
+
+/****************************************************SEDES*************************/
