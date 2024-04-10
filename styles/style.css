@@ -20,6 +20,14 @@
     margin-top: auto;
 }
 
+/*clase para imagenes dentro del carrousel*/
+.img-chica {
+    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
+    max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
+    max-width: 100%;
+    object-fit: contain; /* Conservar proporciones de la imagen sin estirarla */
+}
+
 /* Media query para dispositivos con un ancho máximo de 767px (generalmente dispositivos móviles) */
 @media only screen and (max-width: 767px) {
     /* cuerpo html contenedor del body*/
