@@ -1,4 +1,5 @@
 /* Seteo de color y dimensiones de body y html general */
+
 .cuerpo {
     background-color: black;
 }
@@ -10,6 +11,15 @@
     min-height: 100vh; /* Modificado para ocupar el 100% de la altura de la ventana */
 }
 
+/*contenedor de las etiquetas del navbar*/
+.navbar-brand{
+    color: white;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: green !important; /* Cambia el color del texto a azul */
+}
+
 .pages main {
     flex: 1;
     text-align: center;
@@ -19,9 +29,11 @@
 .pages pie {
     margin-top: auto;
 }
+.piedepagina{
+    background-color: black;
+}
 
-/*clase para imagenes dentro del carrousel*/
-.img-chica {
+.img-chica{
     max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
     max-height: 85.8vh; /* Ajusta este valor según tus necesidades */
     max-width: 100%;
@@ -31,7 +43,7 @@
 /* Media query para dispositivos con un ancho máximo de 767px (generalmente dispositivos móviles) */
 @media only screen and (max-width: 767px) {
     /* cuerpo html contenedor del body*/
-    .cuerpo {
+    body, html, .cuerpo {
         height: 100vh; /* Establecer altura al 100% del viewport height */
     }
 
@@ -105,3 +117,8 @@
     padding-top: 2rem;
 }
 
+/* Estilo para las imágenes dentro del carrusel */
+.card-container .card img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
