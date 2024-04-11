@@ -128,3 +128,15 @@
 }
 
 /****************************************************SEDES*************************/
+.sedes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en dispositivos móviles */
+}
+
+.card-texto-sede{
+    color: brown;
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
