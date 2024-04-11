@@ -150,7 +150,7 @@
 }
 
 .imagen-de-card{
-    max-width: 90%; /* Establece el ancho máximo al 100% del contenedor */
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
     height: 20rem; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
 }
 
