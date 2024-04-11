@@ -118,6 +118,7 @@
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+    margin-bottom: 20px;
 }
 
 /* Estilo para las imágenes dentro del carrusel */
