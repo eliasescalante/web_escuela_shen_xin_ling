@@ -13,6 +13,12 @@
     min-height: 210vh; /* Modificado para ocupar el 100% de la altura de la ventana */
 }
 
+.sede{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Modificado para ocupar el 100% de la altura de la ventana */
+}
+
 /*contenedor de las etiquetas del navbar*/
 .navbar-brand{
     color: white;
@@ -133,10 +139,21 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en dispositivos móviles */
+    margin-bottom: 40px; /* Ajusta el margen inferior para separar las tarjetas */
+    align-items: flex-start;
 }
 
 .card-texto-sede{
     color: brown;
     font-size: 16px; /* Tamaño de fuente */
     font-weight: bold; /* Negrita */
+}
+
+.imagen-de-card{
+    max-width: 90%; /* Establece el ancho máximo al 100% del contenedor */
+    height: 20rem; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.tamanio{
+    width: 30rem; /* Establece el ancho fijo para todas las tarjetas */
 }
